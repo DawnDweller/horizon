@@ -7,4 +7,12 @@
    text="Click me :)"
    press=".onPress"
     />
+    <Input
+        value="{/receipent/name}"
+        description="Hello {/receipent/name}"
+        valueLiveUpdate="true"
+        width="60%"
+        
+            />
+    <Text text="{/receipent/name}"/>
 </mvc:View>
