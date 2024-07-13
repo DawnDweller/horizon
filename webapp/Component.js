@@ -5,15 +5,12 @@ sap.ui.define([
 
 ], (UIComponent, JSONModel, ResourceModel) => {
     return UIComponent.extend("ui5.horizon.Component" , {
-        metadata: {
-            "interfaces": ["sap.ui.core.IAsyncContentCreation"],
-            "rootView": {
-                "viewName": "ui5.horizon.view.App",
-                "type": "XML",
-                "id": "app"
-            }
-        },
-    
+
+        metadata : {
+            interfaces: ["sap.ui.core.IAsyncContentCreation"],
+            manifest: "json"
+         },
+         
         init() {
             UIComponent.prototype.init.apply(this, arguments);
             //data model
