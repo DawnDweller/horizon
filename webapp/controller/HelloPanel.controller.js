@@ -21,7 +21,9 @@ sap.ui.define([
         this.oDialog ??= await this.loadFragment({
             name:"ui5.horizon.view.HelloDialog"
         });
+        console.log(this.oDialog);
         this.oDialog.open();
+
     },
     onCloseDialog() {
         // note: We don't need to chain to the pDialog promise, since this event handler is only called from within the loaded dialog itself.

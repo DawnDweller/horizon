@@ -3,11 +3,12 @@
     xmlns:core="sap.ui.core">
     <Dialog
         id="helloDialog2"
-        title="コニチワ {/recipient/name}"/>
-    <leftButton>
+        title="コニチワ {/receipent/name}">
+      <beginButton>
         <Button  
             text="{i18n>dialogCloseButtonText}"
             press=".onCloseDialog"
         />
-    </leftButton>
+      </beginButton>
+    </Dialog>
 </core:FragmentDefinition>
