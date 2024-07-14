@@ -7,11 +7,12 @@
                 <content>
                         <Button
                         id="helloDialogButton"
+                        icon="sap-icon://database"
                         text="{i18n>openDialogButtonText}"
                         press=".onOpenDialog"
                         class="sapUiSmallMarginEnd"
                         />
-                        <Text text="Hello World"/>
+                        <Text text="Hello World!"/>
                         <Button 
                         text="{i18n>onPressButtonText}"
                         press=".onPress"
