@@ -17,6 +17,12 @@ sap.ui.define([
             onClose: () => MessageToast.show(sCloseMessage),
         });
     },
+    async onOpenDialog() {
+        this.oDialog ??= await this.loadFragment({
+            name:"ui5.horizon.view.HelloDialog"
+        });
+        this.oDialog.open();
+    },
 })
 
 );
