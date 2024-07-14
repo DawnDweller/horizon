@@ -21,7 +21,7 @@ sap.ui.define([
         this.oDialog ??= await this.loadFragment({
             name:"ui5.horizon.view.HelloDialog"
         });
-        console.log(this.oDialog);
+        
         this.oDialog.open();
 
     },
