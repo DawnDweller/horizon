@@ -23,6 +23,7 @@
                   }
                  }"
                  numberUnit="{Dante>/deneme1}"
+                 numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"
             />
         </items>
     </List>
