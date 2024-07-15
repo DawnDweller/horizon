@@ -24,7 +24,16 @@
                  }"
                  numberUnit="{Dante>/deneme1}"
                  numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"
-            />
+                 >
+                <firstStatus>
+                    <ObjectStatus
+                        text="{
+                            path: 'invoice>Status',
+                            formatter: '.formatter.statusText'
+                        }"
+                    />
+                </firstStatus>
+            </ObjectListItem>
         </items>
     </List>
 </mvc:View>

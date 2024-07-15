@@ -20,10 +20,12 @@
 
 const dependencies= [
         "sap/ui/core/mvc/Controller",
-        "sap/ui/model/json/JSONModel"
+        "sap/ui/model/json/JSONModel",
+        "../model/formatter"
 ];
-function initializer(a,b) {
+function initializer(a,b, formatter) {
         return a.extend("ui5.horizon.controller.InvoiceList", {
+                formatter: formatter,
                 onInit() {
                         const mustafa = new b({
                                 deneme1: "deneme2"
