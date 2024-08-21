@@ -49,8 +49,8 @@
         }
       },
       "invoice": {
-                "dataSource": "invoiceRemote"
-            }
+        "dataSource": "invoiceRemote"
+      }
     },
     
     "rootView": {
