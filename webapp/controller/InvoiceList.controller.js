@@ -30,7 +30,7 @@ function initializer(a,b, formatter, Filter, FilterOperator) {
                 formatter: formatter,
                 onInit() {
                         const mustafa = new b({
-                                deneme1: "deneme2"
+                                deneme1: "deneme2invoiceList_Js"
                         });
                         console.log(this, this.getView());
                         this.getView().setModel(mustafa, "Dante");
