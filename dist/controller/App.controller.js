@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],e=>e.extend("ui5.horizon.controller.App",{onInit(){this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass())}}));
+//# sourceMappingURL=App.controller.js.map

@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/test/Opa5","sap/ui/test/actions/Press"],(e,s)=>{"use strict";const t="ui5.horizon.view.HelloPanel";e.createPageObjects({onTheAppPage:{actions:{iPressTheCube(){return this.waitFor({id:"helloDialogButton",viewName:t,actions:new s,errorMessage:"Did not find the 'Cube' button on the HelloPanel view"})}},assertions:{iShouldSeeTheCubeOpen(){return this.waitFor({controlType:"sap.m.Dialog",success(){e.assert.ok(true,"The dialog is open")},errorMessage:"Did not find the dialog control"})}}}})});
+//# sourceMappingURL=App.js.map

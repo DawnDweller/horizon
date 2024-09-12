@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/util/MockServer"],e=>{"use strict";return{init(){const r=new e({rootUri:sap.ui.require.toUrl("ui5/horizon")+"/V2/Northwind/Northwind.svc/"});const o=new URLSearchParams(window.location.search);e.config({autoRespond:true,autoRespondAfter:o.get("serverDelay")||500});const t=sap.ui.require.toUrl("ui5/horizon/localService");r.simulate(t+"/metadata.xml",t+"/mockdata");r.start()}}});
+//# sourceMappingURL=mockserver.js.map
