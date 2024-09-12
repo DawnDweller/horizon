@@ -9,7 +9,8 @@
         width="auto" 
         expandable="{device>/system/phone}" 
         expanded="{= !${device>/system/phone} }"
-        >
+        accessibleRole="Region"
+    >
                 <content>
                         <Button
                         id="helloDialogButton"
